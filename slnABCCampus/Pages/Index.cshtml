@@ -1,0 +1,53 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4" style="font-family:'Times New Roman', Times, serif">Welcome </h1>
+    @*<p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>*@
+</div>
+
+<style>
+    .mypic img {
+        height: 400px;
+        object-fit: cover;
+    }
+</style>
+
+<section>
+    <class class="container-fluid mt-5 mypic ">
+      @*  <div class="row">
+            <div class="col-md-12 mypic mypic" >
+*@
+          
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1000">
+            <img src="./lib/4.jpg" class="d-block w-100" alt="...">
+            @*<img src="./css/" class="card-img-middle" alt="srilanka">*@
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="./lib/2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="./lib/3.jpg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+      
+@*</div>
+        </div>*@
+        </class>
+        </section>

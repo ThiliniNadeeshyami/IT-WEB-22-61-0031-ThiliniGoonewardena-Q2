@@ -1,0 +1,77 @@
+﻿@page
+@model slnABCCampus.Pages.CourseData.CreateModel
+
+<form method="post">
+    <div class="border p-3 mt-4 ">
+        <div class="row pb-2">
+            <h2 class="text-primary pl-3"> Add Course Detail</h2>
+            <hr />
+        </div>
+
+        <div asp-validation-summary="All"></div>
+        <div class="form">
+
+            <div class="form-group">
+                <div class="row">
+                    @*<div class="mb-3">*@
+                    @*Name of the Student:*@
+                    <div class="col-md-2">
+                        <label asp-for="tblCourses.dCourseID">Course ID</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input asp-for="@Model.tblCourses.dCourseID" />
+                        <span asp-validation-for="tblCourses.dCourseID" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    @*<div class ="mb-3">*@
+                    @*Name of the Student:*@
+
+                    <div class="col-md-2">
+                        <label asp-for="tblCourses.szCourseName">Course Name</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input asp-for="@Model.tblCourses.szCourseName" />
+                        <span asp-validation-for="tblCourses.szCourseName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    @*<div class="mb-3">*@
+                    @*City:*@
+                    <div class="col-md-2">
+                        <label asp-for="tblCourses.szLecName">Lecturer Name</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input asp-for="@Model.tblCourses.szLecName" />
+                    </div>
+                </div>
+            </div>
+
+
+          @*  <div class="form-group">
+                <div class="row">
+                    @*<div class="mb-3">*@
+                    @*City:*@
+                 @*   <div class="col-md-1">
+                        <label asp-for="tblStudents.dCourseID">Course</label>
+                    </div>
+                    <div class="col-md-1">
+                        <input asp-for="@Model.tblStudents.dCourseID" />
+                    </div>
+                </div>
+
+            </div>*@
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary" style="width:150px;">
+            Create
+
+        </button>
+    </div>
+</form>
