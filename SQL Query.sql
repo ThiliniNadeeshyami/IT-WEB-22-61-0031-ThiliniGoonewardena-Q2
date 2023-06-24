@@ -1,0 +1,12 @@
+SELECT * FROM dbABCCampus.dbo.tblStudents
+
+SELECT s.dStudentID,s.szStudentName, s.szCity FROM dbABCCampus.dbo.tblStudents s
+WHERE S.szCity='Kandy';
+
+UPDATE dbABCCampus.dbo.tblStudents
+SET szCity='Galle'
+WHERE dStudentID=4;
+
+SELECT s.*, c.szCourseName FROM dbABCCampus.dbo.tblStudents s
+INNER JOIN dbABCCampus.dbo.tblCourses c
+ON s.dCourseID =c.dCourseID
